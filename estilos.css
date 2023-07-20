@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F5EFE7;
+}
+
+/* globales */
+
+.holder {
+    width: 65vw;
+    margin: 4% 28%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h3 {
+    background-color: #213555;
+    color: #F5EFE7;
+    padding: 1%;
+}
+
+p {
+    margin: 0;
+}
+
+/* encabezado */
+
+.encabezado {
+    background-color: #213555;
+    color: #F5EFE7;
+    height: 20vh;
+    position: relative;
+}
+
+.elh1 {
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    border-bottom: solid 3px;
+    padding-bottom: 1%;
+}
+
+.foto {
+    position: absolute;
+    width: 17vw;
+    z-index: 1;
+    top: 4%;
+    left: 3.5%;
+    border: solid 4px #F5EFE7;
+}
+
+/* aside */
+
+.aside {
+    padding: 18% 2% 2% 2%;
+    display: inline-block;
+    background-color: #D8C4B6;
+    width: 20vw;
+    height: 100vw;
+    position: absolute;
+    top: 16%;
+    left: 2%;
+}
+
+.contacto {
+    margin-top: 12%;
+}
+
+.contCont {
+    display: flex;
+}
+
+.contCont, p {
+    margin: auto 0;
+}
+
+.contSocial {
+    margin: 3% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands, .fab, .fa-envelope, .fa-phone {
+    font-size: xx-large !important;
+    font-weight: 500;
+    color: black;
+}
+
+.fa-brands:hover {
+    color: #2e4871;
+}
+
+.fa-solid:hover {
+    color: #2e4871;
+}
+
+.fa-solid, .fas {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.contBotonera {
+    margin-top: 12%;
+    display: grid;
+}
+
+button {
+    display: block;
+    margin: 3%;
+}
+
+.btn-primary {
+    margin: 3% 0;
+    --bs-btn-color: #F5EFE7;
+    --bs-btn-bg: #213555;
+    --bs-btn-border-color: #213555;
+    --bs-btn-hover-color: #F5EFE7;
+    --bs-btn-hover-bg: #2e4871;
+    --bs-btn-hover-border-color: #2e4871;
+}
+
+.accordion {
+    --bs-accordion-border-color: none;
+    --bs-accordion-bg: none;
+    --bs-accordion-btn-padding-x: none;
+    --bs-accordion-btn-icon-transform: rotate(-90deg);
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: none;
+}
+
+.accordion-body {
+    padding: 0 5%;
+}
+
+/* secciones */
+/* carta de presentacion */
+
+/* .Carta {
+    display: ;
+} */
+
+.Formacion {
+    display: none;
+}
+
+.Experiancia {
+    display: none;
+}
+
+.Referencias {
+    display: none;
+}
+
+.Certificaciones {
+    display: none;
+}
