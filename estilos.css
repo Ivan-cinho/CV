@@ -60,7 +60,7 @@ p {
 /* aside */
 
 .aside {
-    padding: 18% 2% 2% 2%;
+    padding: 17% 2% 2% 2%;
     display: inline-block;
     background-color: #D8C4B6;
     width: 20vw;
@@ -108,7 +108,6 @@ p {
 }
 
 .contBotonera {
-    margin-top: 12%;
     display: grid;
 }
 
