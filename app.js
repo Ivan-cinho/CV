@@ -21,7 +21,6 @@ botonFormacion.addEventListener("click", ()=> {
     Experiancia.style.display = 'none'
     Referencias.style.display = 'none'
     Certificaciones.style.display = "none"
-
 })
 
 botonExperiencia.addEventListener("click", ()=> {
