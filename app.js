@@ -68,5 +68,3 @@ botonCarta.addEventListener("click", ()=> {
     Certificaciones.style.display = "none"
 
 })
-
-// const Formacion = document.querySelector(".Formacion").style.display = 'block';
