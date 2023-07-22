@@ -13,8 +13,8 @@ body {
 /* globales */
 
 .holder {
-    width: 65vw;
-    margin: 4% 28%;
+    width: 70vw;
+    margin: 4% 23%;
 }
 
 h1 {
@@ -50,20 +50,20 @@ p {
 
 .foto {
     position: absolute;
-    width: 17vw;
+    width: 14vw;
     z-index: 1;
     top: 4%;
-    left: 3.5%;
+    left: 3%;
     border: solid 4px #F5EFE7;
 }
 
 /* aside */
 
 .aside {
-    padding: 17% 2% 2% 2%;
+    padding: 13% 2% 2% 2%;
     display: inline-block;
     background-color: #D8C4B6;
-    width: 20vw;
+    width: 16vw;
     height: 100vw;
     position: absolute;
     top: 16%;
