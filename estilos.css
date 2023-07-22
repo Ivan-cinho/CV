@@ -70,10 +70,6 @@ p {
     left: 2%;
 }
 
-.contacto {
-    margin-top: 12%;
-}
-
 .contCont {
     display: flex;
 }
@@ -85,11 +81,11 @@ p {
 .contSocial {
     margin: 3% 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .fa-brands, .fab, .fa-envelope, .fa-phone {
-    font-size: xx-large !important;
+    font-size: x-large !important;
     font-weight: 500;
     color: black;
 }
@@ -116,6 +112,7 @@ button {
     margin: 3%;
 }
 
+
 .btn-primary {
     margin: 3% 0;
     --bs-btn-color: #F5EFE7;
@@ -124,6 +121,10 @@ button {
     --bs-btn-hover-color: #F5EFE7;
     --bs-btn-hover-bg: #2e4871;
     --bs-btn-hover-border-color: #2e4871;
+}
+
+.btn-primary:focus {
+    background-color: #2e4871;
 }
 
 .accordion {
