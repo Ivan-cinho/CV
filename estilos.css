@@ -14,7 +14,7 @@ body {
 
 .holder {
     width: 70vw;
-    margin: 4% 23%;
+    margin: 0% 23%;
 }
 
 h1 {
@@ -24,11 +24,18 @@ h1 {
 h3 {
     background-color: #213555;
     color: #F5EFE7;
+    font-size: large;
     padding: 1%;
+    text-align: center;
+}
+
+h4 {
+    font-size: medium;
 }
 
 p {
     margin: 0;
+    font-size: small;
 }
 
 /* encabezado */
@@ -38,16 +45,24 @@ p {
     color: #F5EFE7;
     height: 20vh;
     position: relative;
+    margin-bottom: 2%;
 }
 
-.elh1 {
+/* .elh1 {
     position: absolute;
     left: 45%;
     top: 25%;
-    border-bottom: solid 3px;
+    border-bottom: solid 1px;
     padding-bottom: 1%;
-}
+} */
 
+.elh1 {
+    border-bottom: solid 1px;
+    padding-bottom: 1%;
+    width: 47.5%;
+    margin: auto;
+    padding-top: 2%;
+}
 .foto {
     position: absolute;
     width: 14vw;
@@ -141,12 +156,11 @@ button {
     padding: 0 5%;
 }
 
-/* secciones */
-/* carta de presentacion */
+/* main */
 
-/* .Carta {
-    display: ;
-} */
+main {
+    margin-top: 3%;
+}
 
 .Formacion {
     display: none;
@@ -160,6 +174,17 @@ button {
     display: none;
 }
 
+.contTarjetas {
+    /* display: flex; */
+}
+
+.card {
+    margin: 1%;
+}
+
+.card-text{
+    margin: 0 auto 2%;
+}
 .Certificaciones {
     display: none;
 }
