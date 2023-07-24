@@ -124,7 +124,7 @@ p {
 
 button {
     display: block;
-    margin: 3%;
+    /* margin: 3%; */
 }
 
 
@@ -170,6 +170,15 @@ main {
     display: none;
 }
 
+.accordion-flush {
+    width: 85%;
+    margin: 3% auto;
+}
+
+.accordion-experienci {
+    margin: 3% auto;
+}
+
 .Referencias {
     display: none;
 }
@@ -179,7 +188,13 @@ main {
 }
 
 .card {
-    margin: 1%;
+    max-width: 30%;
+    margin: 1.5%;
+    display: inline-block;
+}
+
+element.style {
+    min-width: none;
 }
 
 .card-text{
