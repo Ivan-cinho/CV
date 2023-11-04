@@ -171,47 +171,16 @@ main {
 }
 
 /* el bendito acordeon */ 
-/* español */
-.acordeon{
-    width: 90%;
-    max-width: 120em;
-    padding: 2em;
-}
-.acordeon .bloque{
-    margin: 0 0 1em;
-    padding: 1em;
-}
-.acordeon .h4{
-    margin: 0 0 1em;
-    padding: 1em;
-}
-.acordeon .contenido{
-    padding: 0em;
-    height: 0; 
-    overflow: hidden;
-    transition: all .5s ease;
-}
-
-.acordeon .bloque.activo .contenido{
-    height: 4em;
-}
-
-/* mexicano */
-
-.contenedorAcordeon{}
-
-.menu{
-
-}
 
 li{
     list-style: none;
     transition: .7s;
+    height: 20px;
     overflow: hidden;
 }
 
 .descripcion{
-    height: 0;
+    height: 12px;
 }
 
 .otraClase{
@@ -234,15 +203,6 @@ li{
 
 .rotate{
     transform: rotate(-90deg);
-}
-
-.accordion-flush {
-    width: 85%;
-    margin: 3% auto;
-}
-
-.accordionExperiencia {
-    margin: 3% auto;
 }
 
 .Referencias {
