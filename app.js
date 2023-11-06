@@ -81,7 +81,7 @@ function cargarAcordeon(acordeon, array) {
         array.forEach(elemento => {
             acordeon.innerHTML += `<li class="list">
                                         <div class="otraClase">
-                                            <a href="#" class="lugar">${elemento.lugar}</a><i class="fa-regular fa-chevron-down"></i>
+                                            <h4 class="lugar">${elemento.lugar}</h4><i class="fa-regular fa-chevron-down"></i>
                                         </div>
                                         <p class="descripcion">${elemento.descripcion}</p>
                                     </li>`
@@ -93,11 +93,33 @@ cargarAcordeon(acordeonFormacion, datosFormacion)
 
 function animarAcordeon(acordeon){
     acordeon.addEventListener('click', (e)=> {
-        if (e.target.classList.contains('otraClase')){
+        if (e.target.classList.contains('otraClase', 'lugar')){
             e.target.parentElement.classList.toggle('scale')
+
+            // console.log(e.target.classList.contains('lugar'))
         }
     })
 }
 animarAcordeon(acordeonExperiencia)
 animarAcordeon(acordeonFormacion)
 
+// carga de cards seccion referecnias y titulos y certificaciones
+
+const contTarjetas = document.querySelector('#tarjetasReferencias')
+
+function cargarTarjetas(tarjeta, array) {
+    if(array.length > 0) {
+        array.forEach(elemento => {
+            tarjeta.innerHTML +=   `<div class="card" style="min-width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">${elemento.nombre}</h5>
+                                            <a href="#" class="card-link"><i class="fa-solid fa-phone"></i>${elemento.telefono}</a>
+                                            <a href="#" class="card-link"><i class="fa-solid fa-envelope"></i>${elemento.correo}</a>
+                                            <a href="${elemento.linkedin}" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                    </div>`
+        })
+    }
+}
+
+cargarTarjetas(tarjetasReferencias, datosReferencias)
