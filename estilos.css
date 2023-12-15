@@ -6,6 +6,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --clr-1: #F5EFE7;
+    --clr-2: #213555;
+    --clr-3: #D8C4B6;
+    --clr-4: #2e4871;
+}
+
 body {
     background-color: #F5EFE7;
 }
@@ -48,13 +55,6 @@ p {
     margin-bottom: 2%;
 }
 
-/* .elh1 {
-    position: absolute;
-    left: 45%;
-    top: 25%;
-    border-bottom: solid 1px;
-    padding-bottom: 1%;
-} */
 
 .elh1 {
     border-bottom: solid 1px;
@@ -105,16 +105,8 @@ p {
     color: black;
 }
 
-/* .fa-brands:hover {
-    color: #2e4871;
-} */
-
-/* .fa-solid:hover {
-    color: #2e4871;
-} */
-
 .fa-solid, .fas {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 900;
 }
 
@@ -130,7 +122,7 @@ button {
 
 .btn-primary {
     margin: 3% 0;
-    --bs-btn-color: #F5EFE7;
+    --bs-btn-color: var(--clr-1);
     --bs-btn-bg: #213555;
     --bs-btn-border-color: #213555;
     --bs-btn-hover-color: #F5EFE7;
@@ -162,25 +154,30 @@ main {
     margin-top: 3%;
 }
 
-.Formacion {
+/* secciones */
+
+
+.Formacion, .Experiancia, .Referencias, .Certificaciones {
     display: none;
 }
 
-.Experiancia {
-    display: none;
+.Carta{
+
 }
 
 /* el bendito acordeon */ 
 
 li{
     list-style: none;
-    transition: .7s;
-    height: 20px;
+    transition: .3s;
+    height: 2em;
     overflow: hidden;
+    margin-top: 2%;
 }
 
 .descripcion{
-    height: 12px;
+    height: 2rem;
+    font-size: 1.2rem;
 }
 
 .otraClase{
@@ -191,26 +188,26 @@ li{
 
 .lugar{
     text-decoration: none;
+    font-size: 1.3rem;
 }
+
 
 .fa-chevron-down{
     transition: .3s;
 }
 
 .scale{
-    height: 3em;
+    height: 4em;
 }
 
 .rotate{
     transform: rotate(-90deg);
 }
 
-.Referencias {
-    display: none;
-}
-
-.contTarjetas {
-    /* display: flex; */
+.acordeones{
+    padding: 0;
+    width: 95%;
+    margin: auto;
 }
 
 .card {
@@ -225,9 +222,6 @@ element.style {
 
 .card-text{
     margin: 0 auto 2%;
-}
-.Certificaciones {
-    display: none;
 }
 
 /* footer */
@@ -246,10 +240,6 @@ footer section div {
     border-top: 1px solid white;
 }
 
-/* footer section div p, span, .fa-phone {
-    display: inline;
-    color: white;
-} */
 
 .btn-social {
     width: 35px;
@@ -260,15 +250,3 @@ footer section div {
     position: relative;
 }
 
-/* section div {
-    margin-top: 2%;
-    padding-top: 1%;
-} */
-
-/* div a i {
-    font-size: x-large;
-    position: absolute;
-    top: 17%;
-    right: 19%;
-    color: #848484;
-} */

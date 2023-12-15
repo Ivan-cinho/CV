@@ -1,5 +1,6 @@
 
 
+const datosPersonales = [{edad: "39 años de edad", nacionalidad: "Argenitno", dni: "Dni 31125388", domicilio: "Domicilio: El Esporal 4525 planta baja D, Ciudad Evita GBA, c.p. 1778"}]
 
 
 const datosFormacion = [{lugar: "E.E.T. nro 11 Islas Malvinas", descripcion: "1998-2002 Técnico electromecánico"},
