@@ -106,7 +106,7 @@ p {
 }
 
 .fa-solid, .fas {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 900;
 }
 
@@ -121,17 +121,17 @@ button {
 
 
 .btn-primary {
-    margin: 3% 0;
+    margin: 5% 0;
     --bs-btn-color: var(--clr-1);
-    --bs-btn-bg: #213555;
-    --bs-btn-border-color: #213555;
-    --bs-btn-hover-color: #F5EFE7;
-    --bs-btn-hover-bg: #2e4871;
-    --bs-btn-hover-border-color: #2e4871;
+    --bs-btn-bg: var(--clr-2);
+    --bs-btn-border-color: var(--clr-2);
+    --bs-btn-hover-color: var(--clr-1);
+    --bs-btn-hover-bg: var(--clr-4);
+    --bs-btn-hover-border-color: var(--clr-4);
 }
 
 .btn-primary:focus {
-    background-color: #2e4871;
+    background-color: var(--clr-4);
 }
 
 .accordion {
@@ -146,6 +146,10 @@ button {
 
 .accordion-body {
     padding: 0 5%;
+}
+
+.accordion-item {
+    margin: 5% 0;
 }
 
 /* main */
@@ -175,9 +179,12 @@ li{
     margin-top: 2%;
 }
 
-.descripcion{
+.descripcion {
     height: 2rem;
-    font-size: 1.2rem;
+    font-size: medium;
+    width: 90%;
+    margin: auto;
+    text-align: left;
 }
 
 .otraClase{
@@ -188,7 +195,7 @@ li{
 
 .lugar{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: large;
 }
 
 
@@ -197,16 +204,21 @@ li{
 }
 
 .scale{
-    height: 4em;
+    height: 5em;
 }
 
 .rotate{
     transform: rotate(-90deg);
 }
 
-.acordeones{
+.acordeones {
     padding: 0;
     width: 95%;
+    margin: auto;
+    margin-bottom: 4%;
+}
+
+.contTarjetas{
     margin: auto;
 }
 
@@ -222,6 +234,17 @@ element.style {
 
 .card-text{
     margin: 0 auto 2%;
+}
+
+/* tarjetas certificaciones */
+
+img, svg {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.tarjetaCertis {
+    width: 40%;
 }
 
 /* footer */

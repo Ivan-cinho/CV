@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- estilos -->
@@ -74,47 +74,33 @@
                 <button class="btn btn-primary botonInicio botonSecciones">Inicio</button>
                 <button class="btn btn-primary botonFormacion botonSecciones">Formación</button>
                 <button class="btn btn-primary botonExperiencia botonSecciones">Experiencia laboral</button>
-                <button class="btn btn-primary botonReferencia botonSecciones">Referencias</button>
-                <button class="btn btn-primary botonCertificaciones botonSecciones">Títulos y certificaciones</button>
             </div>
     </aside>
     <main class="holder">
         <section class="Inicio">
             <h3>Inicio</h3>
-            <div class="Carta">
+            <h4>Carta de presentacion</h4>
+            <div class="Carta" id="unaCarta">
             </div>
-            <div class="Portafolios">                
+            <h4>Portafolios</h4>  
+            <div class="Portafolios" id="unPortafolios">
             </div>
         </section>
         <section class="Formacion">
             <h3>Formacion</h3>
             <ul id="acordeonFormacion" class="acordeones">
-            </ul>            
+            </ul>
+            <h3>Titulos y certificaciones</h3>
+            <div class="contTarjetas" id="tarjetasCertificaciones">
+            </div>            
         </section>
         <section class="Experiancia">
             <h3>Experiencia laboral</h3>
             <ul id="acordeonExperiencia" class="acordeones">
             </ul>
-        </section>
-        <section class="Referencias">   
             <h3>Referencias</h3>
             <div class="contTarjetas" id="tarjetasReferencias">                
             </div>
-        </section>
-        <section class="Certificaciones">
-            <h3>Titulos y certificaciones</h3>
-                <div class="contTarjetas" id="tarjetasCertificaciones">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="card-link"><i class="fa-solid fa-phone"></i></a>
-                            <a href="#" class="card-link"><i class="fa-solid fa-envelope"></i></a>
-                            <a href="#" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
         </section>
     </main>
     <!-- <footer>

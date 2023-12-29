@@ -1,4 +1,11 @@
 
+const cartaDePresentacion = [{carta: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur aliquid quaerat deserunt laborum libero necessitatibus esse atque? Expedita necessitatibus, itaque iusto veritatis nisi nihil dolore repellendus eius ducimus ea dolorum officiis ratione exercitationem suscipit illo, quasi ad, velit saepe sit consequatur eaque! Magni, numquam sit. Aliquam ipsa qui, veniam consequatur atque deserunt molestias repellat dolore autem rerum ex quia dignissimos nemo quidem exercitationem amet quasi non officiis rem ipsam ut a? Harum accusamus velit, soluta explicabo ratione iure alias. Deleniti ad incidunt consequuntur quasi fugit, voluptatibus harum ipsa doloremque impedit repellendus mollitia quibusdam excepturi enim officiis. Quod cupiditate provident tempore?"}]
+
+const datosPortafolios =   [{titulo: "un porta", descripcion: "que hice aca", enlace: "pirulito.com"},
+                            {titulo: "otro porta", descripcion: "que hice alla", enlace: "mingulito.com"},
+                            {titulo: "uno mas", descripcion: "q no se donde hice", enlace: "micho.com"},
+                            {titulo: "no se x cual voy", descripcion: "lo hice?", enlace: "tito.com"},
+                            {titulo: "...", descripcion: "un hambre tengo a esta hr", enlace: "gordo.com"}]
 
 const datosPersonales = [{edad: "39 años de edad", nacionalidad: "Argenitno", dni: "Dni 31125388", domicilio: "Domicilio: El Esporal 4525 planta baja D, Ciudad Evita GBA, c.p. 1778"}]
 
@@ -16,9 +23,15 @@ const datosExperiencia = [{lugar: "Cat-Technologies", descripcion: "Desde abril 
                           {lugar: "Independiente", descripcion: "Desde noviembre de 2007 a la fecha dando clases particulares de música."},  
                           {lugar: "Mindsoft S.A.", descripcion: "Desde agosto del 2004 hasta diciembre de 2007 desempeñando el puesto de cadete en todo el AMBA Y CABA."}]
 
-const datosReferencias = [  {nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
-                            {nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
-                            {nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
-                            {nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
-                            {nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
-                            {nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"}]
+const datosReferencias = [  {id: "1", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
+                            {id: "2", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
+                            {id: "3", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
+                            {id: "4", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
+                            {id: "5", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
+                            {id: "6", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"}]
+                            
+const datosCertificaciones =    [{id: "1", nombre: "un certi", imagen: 'imagenes/titulos - certificados/dw.png', descripcion: "una descri"},
+                                {id: "2", nombre: "otro certi", imagen: "imagenes/titulos - certificados/js.png", descripcion: "una descri"},
+                                {id: "3", nombre: "uno mas", imagen: "imagenes/titulos - certificados/utn.png", descripcion: "una descri"},
+                                {id: "4", nombre: "... y van", imagen: "imagenes/titulos - certificados/ap.png", descripcion: "una descri"},
+                                {id: "5", nombre: "y van mas", imagen: "imagenes/titulos - certificados/ticmas.png", descripcion: "una descri"}]
