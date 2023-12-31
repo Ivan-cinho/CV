@@ -30,8 +30,8 @@ const datosReferencias = [  {id: "1", nombre:"UnNombre", telefono:"11111111", co
                             {id: "5", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
                             {id: "6", nombre:"UnNombre", telefono:"11111111", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"}]
                             
-const datosCertificaciones =    [{id: "1", nombre: "un certi", imagen: 'imagenes/titulos - certificados/dw.png', descripcion: "una descri"},
-                                {id: "2", nombre: "otro certi", imagen: "imagenes/titulos - certificados/js.png", descripcion: "una descri"},
-                                {id: "3", nombre: "uno mas", imagen: "imagenes/titulos - certificados/utn.png", descripcion: "una descri"},
-                                {id: "4", nombre: "... y van", imagen: "imagenes/titulos - certificados/ap.png", descripcion: "una descri"},
-                                {id: "5", nombre: "y van mas", imagen: "imagenes/titulos - certificados/ticmas.png", descripcion: "una descri"}]
+const datosCertificaciones =    [{id: "1", nombre: "CODERHOUSE", imagen: 'imagenes/titulos - certificados/dw.png', descripcion: "Desarrollo web frontend"},
+                                {id: "2", nombre: "CODERHOUSE", imagen: "imagenes/titulos - certificados/js.png", descripcion: "JavaScript"},
+                                {id: "3", nombre: "UTN", imagen: "imagenes/titulos - certificados/utn.png", descripcion: "Desarrollo web con React js"},
+                                {id: "4", nombre: "Argentina Programa", imagen: "imagenes/titulos - certificados/ap.png", descripcion: "1era etapa"},
+                                {id: "5", nombre: "Argentina Programa", imagen: "imagenes/titulos - certificados/ticmas.png", descripcion: "Desarrollo web frontend"}]

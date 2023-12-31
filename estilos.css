@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -184,7 +185,7 @@ li{
     font-size: medium;
     width: 90%;
     margin: auto;
-    text-align: left;
+    text-align: center;
 }
 
 .otraClase{
@@ -218,10 +219,12 @@ li{
     margin-bottom: 4%;
 }
 
-.contTarjetas{
-    margin: auto;
+.contTarjetas {
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
 .card {
     max-width: 30%;
     margin: 1.5%;
@@ -236,6 +239,10 @@ element.style {
     margin: 0 auto 2%;
 }
 
+.card-title {
+    text-align: center;
+}
+
 /* tarjetas certificaciones */
 
 img, svg {
@@ -245,6 +252,16 @@ img, svg {
 
 .tarjetaCertis {
     width: 40%;
+}
+
+/* tarjetas referencias */
+
+.card-referencias{
+    display: block;
+}
+
+.card-link+.card-link {
+    margin-left: 0;
 }
 
 /* footer */

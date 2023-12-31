@@ -146,9 +146,9 @@ function cargarTarjetasReferencias(tarjeta, array) {
             tarjeta.innerHTML +=   `<div class="card" style="min-width: 18rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">${elemento.nombre}</h5>
-                                            <a href="#" class="card-link"><i class="fa-solid fa-phone"></i>${elemento.telefono}</a>
-                                            <a href="#" class="card-link"><i class="fa-solid fa-envelope"></i>${elemento.correo}</a>
-                                            <a href="${elemento.linkedin}" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="#" class="card-link card-referencias"><i class="fa-solid fa-phone"></i>${elemento.telefono}</a>
+                                            <a href="#" class="card-link card-referencias"><i class="fa-solid fa-envelope"></i>${elemento.correo}</a>
+                                            <a href="${elemento.linkedin}" class="card-link card-referencias"><i class="fa-brands fa-linkedin"></i></a>
                                         </div>
                                     </div>`
         })
@@ -162,7 +162,7 @@ function cargarTarjetasFormacion(tarjeta, array) {
             tarjeta.innerHTML +=    `<div class="card" id="tarjetaCertis" style="min-width: 18rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">${elemento.nombre}</h5>
-                                            <P>${elemento.descripcion}</p>
+                                            <P class="descripcion">${elemento.descripcion}</p>
                                             <a href="#" class="card-link" id=""><img class="imagen" src="${elemento.imagen}"></a>
                                         </div>
                                     </div>`
