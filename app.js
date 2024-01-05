@@ -146,9 +146,9 @@ function cargarTarjetasReferencias(tarjeta, array) {
             tarjeta.innerHTML +=   `<div class="card" style="min-width: 18rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">${elemento.nombre}</h5>
-                                            <a href="#" class="card-link"><i class="fa-solid fa-phone"></i>${elemento.telefono}</a>
-                                            <a href="#" class="card-link"><i class="fa-solid fa-envelope"></i>${elemento.correo}</a>
-                                            <a href="${elemento.linkedin}" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
+                                            <p><i class="fa-solid fa-phone iconoCard"></i>${elemento.telefono}</p>
+                                            <p><i class="fa-solid fa-envelope iconoCard"></i>${elemento.correo}</p>
+                                            <a href="${elemento.linkedin}" class="enlaceLinked"><i class="fa-brands fa-linkedin"></i></a>
                                         </div>
                                     </div>`
         })

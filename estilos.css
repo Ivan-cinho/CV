@@ -219,7 +219,9 @@ li{
 }
 
 .contTarjetas{
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -234,6 +236,18 @@ element.style {
 
 .card-text{
     margin: 0 auto 2%;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.iconoCard {
+    margin-right: 5%;
+}
+
+.enlaceLinked{
+    display: block;
 }
 
 /* tarjetas certificaciones */
