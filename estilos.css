@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -184,7 +185,7 @@ li{
     font-size: medium;
     width: 90%;
     margin: auto;
-    text-align: left;
+    text-align: center;
 }
 
 .otraClase{
@@ -223,7 +224,6 @@ li{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .card {
     max-width: 30%;
     margin: 1.5%;
@@ -259,6 +259,16 @@ img, svg {
 
 .tarjetaCertis {
     width: 40%;
+}
+
+/* tarjetas referencias */
+
+.card-referencias{
+    display: block;
+}
+
+.card-link+.card-link {
+    margin-left: 0;
 }
 
 /* footer */

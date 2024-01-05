@@ -162,7 +162,7 @@ function cargarTarjetasFormacion(tarjeta, array) {
             tarjeta.innerHTML +=    `<div class="card" id="tarjetaCertis" style="min-width: 18rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">${elemento.nombre}</h5>
-                                            <P>${elemento.descripcion}</p>
+                                            <P class="descripcion">${elemento.descripcion}</p>
                                             <a href="#" class="card-link" id=""><img class="imagen" src="${elemento.imagen}"></a>
                                         </div>
                                     </div>`
