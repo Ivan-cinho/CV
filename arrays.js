@@ -23,12 +23,12 @@ const datosExperiencia = [{lugar: "Cat-Technologies", descripcion: "Desde abril 
                           {lugar: "Independiente", descripcion: "Desde noviembre de 2007 a la fecha dando clases particulares de música."},  
                           {lugar: "Mindsoft S.A.", descripcion: "Desde agosto del 2004 hasta diciembre de 2007 desempeñando el puesto de cadete en todo el AMBA Y CABA."}]
 
-const datosReferencias = [  {id: "1", nombre:"Daniel Figueroa", telefono:"1164912488", correo:"figueroa.salvador.d@gmail.com", linkedin:"linkedin"},
-                            {id: "2", nombre:"Josue Ghiso", telefono:"1169626633", correo:"josueghiso24@gmail.com", linkedin:"linkedin.com/in/josué-ghiso-8044041a1"},
-                            {id: "3", nombre:"Laura Paez", telefono:"1136766296", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
-                            {id: "4", nombre:"Javier Arrieta", telefono:"", correo:"javierarrieta89@gmail.com", linkedin:"https://www.linkedin.com/in/javier-arrieta/"},
-                            {id: "5", nombre:"Matias Locascio", telefono:"", correo:"matiaslocascio@hotmail.com", linkedin:"linkedin.com/in/matias-locascio-4a541350"},
-                            {id: "6", nombre:"Abril Gutierrez", telefono:"1144458836", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"}]
+const datosReferencias = [  {nombre:"Daniel Figueroa", telefono:"1164912488", correo:"figueroa.salvador.d@gmail.com", linkedin:"linkedin"},
+                            {nombre:"Josue Ghiso", telefono:"1169626633", correo:"josueghiso24@gmail.com", linkedin:"linkedin.com/in/josué-ghiso-8044041a1"},
+                            {nombre:"Laura Paez", telefono:"1136766296", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
+                            {nombre:"Javier Arrieta", telefono:"", correo:"javierarrieta89@gmail.com", linkedin:"https://www.linkedin.com/in/javier-arrieta/"},
+                            {nombre:"Tomás Galindo", telefono:"", correo:"matiaslocascio@hotmail.com", linkedin:"linkedin.com/in/matias-locascio-4a541350"},
+                            {nombre:"Abril Gutierrez", telefono:"1144458836", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"}]
                             
 const datosCertificaciones =    [{id: "1", nombre: "un certi", imagen: 'imagenes/titulos - certificados/dw.png', descripcion: "una descri"},
                                 {id: "2", nombre: "otro certi", imagen: "imagenes/titulos - certificados/js.png", descripcion: "una descri"},

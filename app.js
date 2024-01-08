@@ -10,7 +10,36 @@ const Referencias = document.querySelector(".Referencias");
 const Certificaciones = document.querySelector(".Certificaciones");
 const holder = document.querySelector(".holder")
 
+
 // aside 
+// datos personales y contacto
+const Personales = document.querySelector(".Personales")
+function cargarDatosPersonales(datos, array) {
+    if(array.length > 0) {
+        array.forEach(elemento => {
+            datos.innerHTML = `<p>${elemento.edad}</p>
+                                <p>${elemento.nacionalidad}</p>
+                                <p>${elemento.dni}</p>
+                                <p>${elemento.domicilio}</p>`
+        })
+    }
+}
+cargarDatosPersonales(Personales, datosPersonales)
+
+// mostrar medios de contacto
+const enlaceContacto = document.querySelector(".enlaceContacto")
+const mostrarDatosDeContacto = () => {
+    swal.fire ({
+        title: '¿Cómo puedo pagar mi seguro?',
+        width: '50%',
+        backdrop: 'true',
+    })
+}
+
+enlaceContacto.addEventListener("click", ()=>{
+    mostrarDatosDeContacto()
+})
+
 // botonera de navegacion
 const botonInicio = document.querySelector(".botonInicio");
 const botonFormacion = document.querySelector(".botonFormacion")
@@ -34,39 +63,20 @@ botonFormacion.addEventListener("click", ()=> {
     Formacion.style.display = 'block'
     Inicio.style.display = 'none'
     Experiancia.style.display = 'none'
-    Referencias.style.display = 'none'
-    Certificaciones.style.display = "none"
 })
 
 botonExperiencia.addEventListener("click", ()=> {
     Formacion.style.display = 'none'
     Inicio.style.display = 'none'
     Experiancia.style.display = 'block'
-    Referencias.style.display = 'none'
-    Certificaciones.style.display = "none"
 })
 
 botonInicio.addEventListener("click", ()=> {
     Formacion.style.display = 'none'
     Inicio.style.display = 'block'
     Experiancia.style.display = 'none'
-    Referencias.style.display = 'none'
-    Certificaciones.style.display = "none"
 })
 
-// datos personales y contacto
-const Personales = document.querySelector(".Personales")
-function cargarDatosPersonales(datos, array) {
-    if(array.length > 0) {
-        array.forEach(elemento => {
-            datos.innerHTML = `<p>${elemento.edad}</p>
-                                <p>${elemento.nacionalidad}</p>
-                                <p>${elemento.dni}</p>
-                                <p>${elemento.domicilio}</p>`
-        })
-    }
-}
-cargarDatosPersonales(Personales, datosPersonales)
 
 
 // carga de pantalla de inicio
@@ -161,9 +171,11 @@ function cargarTarjetasFormacion(tarjeta, array) {
         array.forEach(elemento => {
             tarjeta.innerHTML +=    `<div class="card" id="tarjetaCertis" style="min-width: 18rem;">
                                         <div class="card-body">
+                                        <a href="#" class="card-link botonCertis" id="${elemento.id}">
                                             <h5 class="card-title">${elemento.nombre}</h5>
                                             <P class="descripcion">${elemento.descripcion}</p>
-                                            <a href="#" class="card-link" id=""><img class="imagen" src="${elemento.imagen}"></a>
+                                            <img class="imagen" src="${elemento.imagen}">
+                                        </a>
                                         </div>
                                     </div>`
         })
@@ -171,26 +183,13 @@ function cargarTarjetasFormacion(tarjeta, array) {
 }
 cargarTarjetasFormacion(tarjetasCertificaciones, datosCertificaciones)
 
-const mostrarCertificado = () => {
+const botonCertis = document.querySelectorAll(".botonCertis")
+
+const mostrarCertis = () => {
     swal.fire({
         title: '¿Cómo puedo pagar mi seguro?',
         width: '50%',
         backdrop: 'true',
-        imageUrl: 'imagenes/lacaja.svg',
-        imageWidth: '10%',
-        imageAlt: 'La caja',
-        showConfirmButton: false
     })
-}
-
-const btnCertificado = document.querySelectorAll("#btnCertificado")
-const botonCertificados = () => {
-    if (btnCertificado !== null) {
-        for (boton of btnCertificado) {
-            boton.addEventListener("click", () => {
-                mostrarCertificado()
-            })
-        }
-    }
 }
 
