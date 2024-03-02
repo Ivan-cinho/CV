@@ -30,9 +30,9 @@ const datosExperiencia = [  {lugar: "Cat-Technologies", descripcion: "Desde abri
                             {lugar: "Independiente", descripcion: "Desde noviembre de 2007 a la fecha dando clases particulares de música."},  
                             {lugar: "Mindsoft S.A.", descripcion: "Desde agosto del 2004 hasta diciembre de 2007 desempeñando el puesto de cadete en todo el AMBA Y CABA."}]
 
-const datosReferencias = [  {nombre:"Daniel Figueroa", telefono:"+54 11 64912488", correo:"figueroa.salvador.d@gmail.com", linkedin:"linkedin"},
+const datosReferencias = [  {nombre:"Daniel Figueroa", telefono:"+54 11 64912488", correo:"figueroa.salvador.d@gmail.com", linkedin:""},
                             {nombre:"Josue Ghiso", telefono:"+54 11 69626633", correo:"josueghiso24@gmail.com", linkedin:"linkedin.com/in/josué-ghiso-8044041a1"},
-                            {nombre:"Laura Paez", telefono:"+54 11 36766296", correo:"uncorreo@uncorreo.com", linkedin:"linkedin"},
+                            {nombre:"Laura Paez", telefono:"+54 11 36766296", correo:"", linkedin:""},
                             {nombre:"Javier Arrieta", telefono:"", correo:"javierarrieta89@gmail.com", linkedin:"https://www.linkedin.com/in/javier-arrieta/"},
                             {nombre:"Tomás Galindo", telefono:"", correo:"tomas-samir@hotmail.com", linkedin:"https://www.linkedin.com/in/tom%C3%A1s-samir-galindo-rivera-77148b105/"},
                             {nombre:"Abril Gutierrez", telefono:"+54 11 44458836", correo:"luchigutierrez2000@gmail.com", linkedin:""}]
