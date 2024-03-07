@@ -25,17 +25,56 @@ cargarDatosPersonales(Personales, datosPersonales)
 
 
 // mostrar medios de contacto
-const enlaceContacto = document.querySelector(".enlaceContacto")
-const mostrarDatosDeContacto = () => {
+
+// envio de mail
+
+function vaidarEnviarConsulta() {
+    return (campoNombre.value !== "" &&  campoCorreo.value !== "" && campoTexto.value !== "")
+}
+
+const errorQuieroQueMeCotacten = () => {
     swal.fire ({
-        title: '¿Cómo puedo pagar mi seguro?',
-        width: '50%',
+        title: 'Debe llenar los campos requeridos',
+        icon: 'error',
+        width: '70%',
+        showConfirmButton: false,
         backdrop: 'true',
+        html: '<button class="btn btn-danger" id="aceptar">Aceptar</button>'
+    })
+    const aceptar = document.getElementById("aceptar");
+    aceptar.addEventListener ("click", () => {
+        quieroQueMeContacten()
+    })
+}
+
+const enlaceContacto = document.querySelector(".enlaceContacto")
+const quieroQueMeContacten = () => {
+    Swal.fire ({
+        width: '50%',
+        imageUrl: 'imagenes/lacaja.svg',
+        imageWidth: '10%',
+        showConfirmButton: false,
+        title: 'Ingrese sus datos y sera contactado a la brevedad',
+        html:   '<input class="form-control form-control-sm formQuieroQueMeContacten" name="from_name" id="campoNombre" type="text" placeholder="Nombre y apellido" aria-label=".form-control-lg">'+
+                '<input class="form-control form-control-sm formQuieroQueMeContacten" name="email_id" id="campoCorreo" type="text" placeholder="Correo electronico" aria-label=".form-control-lg">'+
+                '<textarea name="" class="form-control textAreaQuieroQueMeContacten" name="message" id="campoTexto" cols="20" rows="10" placeholder="Escriba su inquietud"></textarea>'+
+                '<button class="btn btn-danger" id="enviar">Enviar</button>'
+    })
+    const campoNombre = document.querySelector("#campoNombre");
+    const campoCorreo = document.getElementById("campoCorreo");
+    const campoTexto = document.getElementById("campoTexto");
+    const enviar = document.getElementById("enviar");
+    enviar.addEventListener ("click", ()=> {
+        if (vaidarEnviarConsulta()) {
+            envioExitoso()
+        } else {
+            errorQuieroQueMeCotacten()
+        }
     })
 }
 
 enlaceContacto.addEventListener("click", ()=>{
-    mostrarDatosDeContacto()
+    quieroQueMeContacten()
 })
 
 // botonera de navegacion
