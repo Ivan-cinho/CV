@@ -73,6 +73,7 @@ p {
     width: 47.5%;
     margin: auto;
     padding-top: 2%;
+    text-align: center;
 }
 .foto {
     position: absolute;
@@ -80,7 +81,7 @@ p {
     z-index: 2;
     top: 10%;
     left: 3%;
-    border: solid 4px var(--clr-4);
+    border: solid 5px var(--clr-1);
 }
 
 /* aside */
